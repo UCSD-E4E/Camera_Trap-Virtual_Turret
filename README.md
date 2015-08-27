@@ -1,6 +1,7 @@
 The information here is to help users get our system up and running. If you are interested in reading more about the project, you should read the paper detailing the system architecture, tracking algorithm structure, and the results of initial research and development.
 
-**Dependencies:**
+**Dependencies**
+
 The system was developed on a MinnowBoardMAX running Ubuntu 14.04. Note that future work involving GPIO signals will require Linux 3.19.
 
 You will need to install the following software to use the Camera Trap program:  
@@ -12,6 +13,7 @@ You will need to install the following software to use the Camera Trap program:
   v4l-utils  
 
 **Camera Setup**
+
 The program is designed to run on a complete unit, so some camera setup is required if it is being run independently of a complete camera trap. 
 
 You can determine your camera setup by writing a quick python script that imports the devmap file. It should look something like the following:
