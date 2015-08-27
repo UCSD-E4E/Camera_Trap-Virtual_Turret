@@ -92,7 +92,10 @@ def listDevNums():
 		if device.startswith("video"):
 			result += [int(device[5:])] # Add the int device number to the list.
 	return result
-
+print getportid(0)
+print getportid(1)
+print getportid(2)
+print getportid(3)
 
 
 

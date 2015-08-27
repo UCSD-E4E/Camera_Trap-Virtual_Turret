@@ -156,10 +156,10 @@ class Controller(object):
 		tracker.join()
 
 if __name__=='__main__':
-	orderedPorts = ['1-1.1', '1-1.2', '1-1.3']
+	orderedPorts = ['1-1.2', '1-1.1', '1-1.4', '1-1.3']
 	# Cameras at the front of the list are on the "right" and cameras at the
 	# end of the list are on the "left."
-	firstCamera = 0  # Index in orderPorts list for which camera turns on first.
+	firstCamera = 1  # Index in orderPorts list for which camera turns on first.
 
 	# Create and start the controller object.
 	controller = Controller(ports=orderedPorts, isCircle=False, firstCamera=firstCamera, delay=10)
