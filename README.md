@@ -19,10 +19,10 @@ The program is designed to run on a complete unit, so some camera setup is requi
 
 You can determine your camera setup by writing a quick python script that imports the devmap file. It should look something like the following:
 
-import devmap
-print "/dev/video0 --> " + str(devmap.getportid(0))
-print "/dev/video1 --> " + str(devmap.getportid(1))
-print "/dev/video2 --> " + str(devmap.getportid(2))
+import devmap;
+print "/dev/video0 --> " + str(devmap.getportid(0));
+print "/dev/video1 --> " + str(devmap.getportid(1));
+print "/dev/video2 --> " + str(devmap.getportid(2));
 
 
 Alter the script so that it prints results for all the cameras that you see when you run ls /dev/video*. The output of this script shows the mapping between the device number and the port id of the USB port it is plugged into. The main point of all this is for you to get a sense of what the port ids are for the different USB ports in case you are running them on different computers or hubs.
